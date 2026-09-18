@@ -24,16 +24,7 @@
       .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
       .card { display:flex; min-height:438px; flex-direction:column; overflow:hidden; border:1px solid var(--line); border-radius:18px; background:var(--paper); box-shadow:0 8px 25px #16254b0a; transition:transform .18s ease,box-shadow .18s ease; }
       .card:hover { transform:translateY(-4px); box-shadow:0 15px 36px #16254b1a; }
-      .thumb { display:none; }
-      .card:before { display:block; height:148px; flex:0 0 148px; content:""; background:radial-gradient(circle at 25% 28%,#c5d5ff 0 8%,transparent 8.5%),radial-gradient(circle at 72% 62%,#5679eb 0 18%,transparent 18.5%),linear-gradient(125deg,#e8eeff,#c2d2fb); }
-      .card:nth-child(2):before { background:linear-gradient(135deg,#071c32 0 44%,#4e89d8 44% 47%,#0c3158 47%),radial-gradient(circle at 74% 27%,#84d5ff 0 6%,transparent 6.5%); }
-      .card:nth-child(3):before { background:radial-gradient(circle at 25% 35%,#fff0cf 0 10%,transparent 10.5%),radial-gradient(circle at 76% 64%,#ff7e62 0 21%,transparent 21.5%),linear-gradient(135deg,#552754,#c9526f); }
-      .card:nth-child(4):before { background:radial-gradient(circle at 50% 50%,#b6f5e7 0 19%,transparent 19.5%),linear-gradient(125deg,#0e554d,#3fba9f); }
-      .card:nth-child(5):before { background:repeating-linear-gradient(55deg,#d9d4ff 0 2px,#4a3fab 2px 5px),linear-gradient(125deg,#f3eaff,#8074e8); }
-      .card:nth-child(6):before { background:radial-gradient(circle at 78% 28%,#ffd8a5 0 9%,transparent 9.5%),linear-gradient(125deg,#6d3d2f,#d99c67); }
-      .card:nth-child(7):before { background:radial-gradient(circle at 24% 32%,#f4c06c 0 10%,transparent 10.5%),linear-gradient(125deg,#fff0bd,#e89038); }
-      .card:nth-child(8):before { background:radial-gradient(circle at 25% 70%,#8ff1e9 0 13%,transparent 13.5%),linear-gradient(125deg,#123d5a,#237d90); }
-      .card:nth-child(9):before { background:radial-gradient(circle at 70% 27%,#b4c8ff 0 12%,transparent 12.5%),linear-gradient(125deg,#202957,#6678d6); }
+      .thumb { display:block; width:100%; height:148px; flex:0 0 148px; object-fit:cover; background:#dce4f8; }
       .copy { display:flex; height:100%; flex:1; flex-direction:column; padding:18px 18px 16px; }
       .tag { display:inline-flex; align-self:flex-start; margin-bottom:9px; padding:3px 8px; border-radius:5px; color:var(--blue); background:#edf1ff; font-size:12px; font-weight:700; }
       h3 { margin:0; font-size:19px; line-height:1.4; letter-spacing:-.02em; }
@@ -75,6 +66,6 @@
       </section>
       <section class="watch"><h2>值得盯住的三条线</h2><div class="watch-grid"><div><b>01 / 事故披露</b><p>安全从原则倡议，走向可验证、可复盘的机制建设。</p></div><div><b>02 / 界面消失</b><p>模型正在嵌入浏览、办公和家庭，权限设计成为产品核心。</p></div><div><b>03 / 主权与互联</b><p>区域自主与跨国治理协作，将持续共同塑造 AI 产业格局。</p></div></div></section>
     </main>
-    <footer class="wrap">编辑说明：按北京时间计，收录 9 月 17 日发生或已进入当天全球新闻周期的事件。图片来自 Unsplash，仅作版式示意；正式发布前可替换为具备使用授权的新闻配图。</footer>
+    <footer class="wrap">编辑说明：按北京时间计，收录 9 月 17 日发生或已进入当天全球新闻周期的事件。配图来自公开 Unsplash 图片，仅用于与报道主题匹配的网页展示。</footer>
   </body>
 </html>
